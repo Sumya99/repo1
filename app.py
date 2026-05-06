@@ -3,8 +3,8 @@ import requests, os
 
 app = Flask(__name__)
 
-TOKEN   = os.environ["8079255672:AAFi97qZMUqRepNmld3jj7akKD_xxHGKbY0"]
-CHAT_ID = os.environ["-5068350000"]
+TOKEN   = os.environ["TELEGRAM_TOKEN"]   # ← just the variable NAME
+CHAT_ID = os.environ["CHAT_ID"]          # ← just the variable NAME
 
 @app.route("/webhook", methods=["POST"])
 def webhook():
